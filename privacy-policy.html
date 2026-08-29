@@ -1,1 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Politique de confidentialité — Infinity Life</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 24px;
+      background: #0b0b0d;
+      color: #e8e8ea;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
 
+    main {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-top: 32px;
+    }
+
+    p {
+      color: #b9b9bf;
+    }
+
+    .date {
+      color: #8f8f96;
+      margin-bottom: 32px;
+    }
+
+    section {
+      background: #17171b;
+      border: 1px solid #29292f;
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+
+    strong {
+      color: #ffffff;
+    }
+
+    a {
+      color: #78a9ff;
+    }
+  </style>
+</head>
+
+<body>
+<main>
+
+  <h1>Politique de confidentialité</h1>
+
+  <p class="date">
+    Cette politique décrit comment Infinity Life traite vos données,
+    en mode invité comme avec un compte connecté.<br>
+    Dernière mise à jour : juin 2026.
+  </p>
+
+  <section>
+    <h2>1. Un compte est optionnel</h2>
+    <p>
+      Infinity Life peut être utilisé sans compte. En mode invité,
+      vos données restent uniquement sur votre appareil et sont
+      conservées dans le stockage local de l'application.
+    </p>
+    <p>
+      Vous pouvez à tout moment créer un compte Supabase Auth
+      avec votre adresse e-mail et votre mot de passe afin d'activer
+      la synchronisation cloud sécurisée, ou continuer à utiliser
+      l'application sans compte.
+    </p>
+  </section>
+
+  <section>
+    <h2>2. Données stockées localement</h2>
+    <p>
+      En mode invité comme en mode connecté, certaines données sont
+      conservées dans le stockage local de votre téléphone afin de
+      permettre le fonctionnement de l'application.
+    </p>
+    <p>
+      Ces données peuvent notamment inclure : véhicules, dépenses
+      Maison, dépenses Portefeuille, objectifs, rappels intelligents,
+      historiques mensuels, préférences d'affichage, état du tutoriel
+      de bienvenue, catégories de dépenses personnalisées et état de
+      progression Premium en cache.
+    </p>
+    <p>
+      Les données stockées uniquement sur l'appareil sont supprimées
+      lorsque vous désinstallez l'application.
+    </p>
+  </section>
+
+  <section>
+    <h2>3. Synchronisation cloud — comptes connectés</h2>
+    <p>
+      Si vous créez un compte, les données Infinity Life concernées
+      sont synchronisées de manière chiffrée (TLS) avec votre compte
+      privé chez Supabase, notre fournisseur d'hébergement cloud.
+    </p>
+    <p>
+      Les données susceptibles d'être synchronisées comprennent :
+      profils, véhicules, dépenses Maison, dépenses Portefeuille,
+      historiques mensuels, objectifs et rappels.
+    </p>
+    <p>
+      Les règles de sécurité au niveau des lignes (Row Level Security)
+      restreignent l'accès aux données à leur propriétaire.
+      Aucun autre utilisateur ne peut accéder à vos données.
+    </p>
+  </section>
+
+  <section>
+    <h2>4. Coins, séries et récompenses</h2>
+    <p>
+      L'économie de Coins de l'application, comprenant notamment
+      le solde, les transactions, les séries de connexion, les dépenses
+      cosmétiques et les achats Premium avec Coins, est gérée
+      exclusivement côté serveur via les Edge Functions Supabase.
+    </p>
+    <p>
+      Cette architecture vise notamment à empêcher toute manipulation
+      locale du solde.
+    </p>
+    <p>
+    Le solde et l'historique des transactions sont associés à votre compte Supabase.
