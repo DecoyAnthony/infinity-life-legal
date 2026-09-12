@@ -1,322 +1,375 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
   <title>Politique de confidentialité — Infinity Life</title>
+  <meta name="description" content="Politique de confidentialité de l'application Infinity Life. Ce que nous collectons, pourquoi, comment supprimer vos données." />
   <style>
-    body {
-      margin: 0;
-      padding: 24px;
-      background: #0b0b0d;
-      color: #e8e8ea;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-    }
-
-    main {
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h1 {
-      font-size: 32px;
-      margin-bottom: 8px;
-    }
-
-    h2 {
-      font-size: 20px;
-      margin-top: 32px;
-    }
-
-    p {
-      color: #b9b9bf;
-    }
-
-    .date {
-      color: #8f8f96;
-      margin-bottom: 32px;
-    }
-
-    section {
-      background: #17171b;
-      border: 1px solid #29292f;
-      border-radius: 16px;
-      padding: 20px;
-      margin-bottom: 16px;
-    }
-
-    strong {
-      color: #ffffff;
-    }
-
-    a {
-      color: #78a9ff;
-    }
+    :root { --bg:#0a0a0a; --card:#141416; --border:#26262a; --text:#f4f4f5; --muted:#a1a1aa; --accent:#0a84ff; }
+    * { box-sizing:border-box; }
+    html, body { margin:0; padding:0; background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; line-height:1.65; }
+    a { color:var(--accent); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .wrap { max-width:820px; margin:0 auto; padding:48px 22px; }
+    .brand { display:flex; align-items:center; gap:12px; font-weight:800; font-size:18px; margin-bottom:24px; }
+    .brand-dot { width:28px; height:28px; border-radius:8px; background:linear-gradient(135deg,#0a84ff 0%,#64d2ff 100%); }
+    .breadcrumb { color:var(--muted); font-size:13px; margin-bottom:20px; }
+    h1 { font-size:30px; font-weight:900; letter-spacing:-0.4px; margin:8px 0 4px; }
+    .meta { color:var(--muted); font-size:13px; margin-bottom:28px; }
+    h2 { font-size:18px; font-weight:800; margin:32px 0 8px; color:var(--text); }
+    p, li { color:#e4e4e7; font-size:15px; }
+    ul { padding-left:20px; }
+    code { background:#1c1c1f; padding:2px 6px; border-radius:4px; font-size:13.5px; }
+    section { margin-top:22px; }
+    footer { color:var(--muted); font-size:12.5px; margin-top:48px; border-top:1px solid var(--border); padding-top:20px; }
   </style>
 </head>
-
 <body>
-<main>
+  <div class="wrap">
+    <div class="brand"><span class="brand-dot"></span><span>Infinity Life</span></div>
+    <div class="breadcrumb"><a href="./index.html">← Documents légaux</a></div>
 
-  <h1>Politique de confidentialité</h1>
+    <h1>Politique de confidentialité</h1>
+    <p class="meta">Dernière mise à jour : 12&nbsp;septembre&nbsp;2026 · Application Android <code>com.infinitycar.app</code></p>
 
-  <p class="date">
-    Cette politique décrit comment Infinity Life traite vos données,
-    en mode invité comme avec un compte connecté.<br>
-    Dernière mise à jour : juin 2026.
-  </p>
+    <section>
+      <p>
+        Cette politique décrit ce qu'Infinity Life collecte, pourquoi,
+        avec qui les données peuvent être partagées et comment vous
+        pouvez les supprimer. Elle s'applique à l'application mobile
+        Infinity Life distribuée via Google Play.
+      </p>
+    </section>
 
-  <section>
-    <h2>1. Un compte est optionnel</h2>
-    <p>
-      Infinity Life peut être utilisé sans compte. En mode invité,
-      vos données restent uniquement sur votre appareil et sont
-      conservées dans le stockage local de l'application.
-    </p>
-    <p>
-      Vous pouvez à tout moment créer un compte Supabase Auth
-      avec votre adresse e-mail et votre mot de passe afin d'activer
-      la synchronisation cloud sécurisée, ou continuer à utiliser
-      l'application sans compte.
-    </p>
-  </section>
+    <section>
+      <h2>1. Un compte est optionnel</h2>
+      <p>
+        Vous pouvez utiliser Infinity Life sans créer de compte. Vos
+        données restent alors uniquement sur votre appareil. La création
+        d'un compte est nécessaire uniquement si vous souhaitez
+        synchroniser vos données entre plusieurs appareils.
+      </p>
+    </section>
 
-  <section>
-    <h2>2. Données stockées localement</h2>
-    <p>
-      En mode invité comme en mode connecté, certaines données sont
-      conservées dans le stockage local de votre téléphone afin de
-      permettre le fonctionnement de l'application.
-    </p>
-    <p>
-      Ces données peuvent notamment inclure : véhicules, dépenses
-      Maison, dépenses Portefeuille, objectifs, rappels intelligents,
-      historiques mensuels, préférences d'affichage, état du tutoriel
-      de bienvenue, catégories de dépenses personnalisées et état de
-      progression Premium en cache.
-    </p>
-    <p>
-      Les données stockées uniquement sur l'appareil sont supprimées
-      lorsque vous désinstallez l'application.
-    </p>
-  </section>
+    <section>
+      <h2>2. Données stockées localement</h2>
+      <p>
+        L'application stocke sur votre appareil vos véhicules, dépenses
+        Maison, dépenses Portefeuille, historiques mensuels, objectifs,
+        rappels, préférences de langue et de thème, ainsi que votre
+        progression dans les cosmétiques et les Coins tant que vous
+        n'êtes pas connecté à un compte.
+      </p>
+      <p>
+        Les données locales sont supprimées lorsque vous désinstallez
+        l'application.
+      </p>
+    </section>
 
-  <section>
-    <h2>3. Synchronisation cloud — comptes connectés</h2>
-    <p>
-      Si vous créez un compte, les données Infinity Life concernées
-      sont synchronisées de manière chiffrée (TLS) avec votre compte
-      privé chez Supabase, notre fournisseur d'hébergement cloud.
-    </p>
-    <p>
-      Les données susceptibles d'être synchronisées comprennent :
-      profils, véhicules, dépenses Maison, dépenses Portefeuille,
-      historiques mensuels, objectifs et rappels.
-    </p>
-    <p>
-      Les règles de sécurité au niveau des lignes (Row Level Security)
-      restreignent l'accès aux données à leur propriétaire.
-      Aucun autre utilisateur ne peut accéder à vos données.
-    </p>
-  </section>
+    <section>
+      <h2>3. Synchronisation cloud — Supabase</h2>
+      <p>
+        Si vous créez un compte, les données Infinity Life concernées
+        sont synchronisées de manière chiffrée (TLS) avec votre compte
+        privé chez <strong>Supabase, Inc.</strong> — notre fournisseur
+        d'hébergement de base de données et d'authentification.
+      </p>
+      <p>
+        Les données synchronisées comprennent : profil, véhicules,
+        dépenses Maison, dépenses Portefeuille, historiques mensuels,
+        objectifs, rappels, solde de Coins, cosmétiques débloqués et
+        équipés, statut d'abonnement Premium en cache.
+      </p>
+      <p>
+        Les règles de sécurité au niveau des lignes (Row Level Security)
+        restreignent strictement l'accès à vos données à votre seul
+        compte. Aucun autre utilisateur ne peut y accéder.
+      </p>
+    </section>
 
-  <section>
-    <h2>4. Coins, séries et récompenses</h2>
-    <p>
-      L'économie de Coins de l'application, comprenant notamment
-      le solde, les transactions, les séries de connexion, les dépenses
-      cosmétiques et les achats Premium avec Coins, est gérée
-      exclusivement côté serveur via les Edge Functions Supabase.
-    </p>
-    <p>
-      Cette architecture vise notamment à empêcher toute manipulation
-      locale du solde.
-    </p>
-    <p>
-    Le solde et l'historique des transactions sont associés à votre compte Supabase.
-        <section>
-    <h2>5. Publicité — utilisateurs Free</h2>
-    <p>
-      Les utilisateurs Free peuvent voir des publicités Google AdMob.
-      Elles peuvent notamment prendre la forme d'une bannière discrète
-      en bas des principaux écrans, d'une publicité interstitielle
-      occasionnelle et de publicités récompensées volontairement
-      regardées par l'utilisateur.
-    </p>
-    <p>
-      Les publicités récompensées peuvent permettre de gagner des Coins
-      selon les règles affichées dans l'application.
-    </p>
-    <p>
-      Google AdMob peut utiliser un identifiant publicitaire anonyme
-      conformément à sa propre politique de confidentialité.
-    </p>
-    <p>
-      Les utilisateurs Premium ne voient aucune publicité classique,
-      notamment aucune bannière ni publicité interstitielle.
-      Les publicités récompensées peuvent rester disponibles lorsqu'elles
-      sont proposées volontairement dans l'application.
-    </p>
-  </section>
+    <section>
+      <h2>4. Coins, séries et récompenses</h2>
+      <p>
+        L'économie de Coins de l'application (solde, transactions,
+        séries, achats cosmétiques, déblocages Premium en Coins) est
+        gérée exclusivement côté serveur via les Edge Functions
+        Supabase. Cette architecture empêche toute manipulation locale
+        du solde.
+      </p>
+      <p>
+        Le solde et l'historique des transactions sont associés à votre
+        compte Supabase.
+      </p>
+    </section>
 
-  <section>
-    <h2>6. Abonnements Premium</h2>
-    <p>
-      Trois formules Premium sont disponibles via Google Play :
-      mensuelle à 4,99 € par mois, trimestrielle à 11,99 € pour 3 mois
-      et annuelle à 34,99 € par an.
-    </p>
-    <p>
-      Chaque mois effectivement couvert par un abonnement Premium
-      crédite 150 Coins sur le compte. Pour les abonnements trimestriels
-      et annuels, les Coins sont distribués mois par mois et non
-      intégralement au moment du paiement initial.
-    </p>
-    <p>
-      La facturation, le paiement et la gestion du renouvellement sont
-      effectués par Google Play ou l'App Store selon la plateforme.
-      Infinity Life reçoit uniquement les informations nécessaires
-      à la vérification du statut Premium.
-    </p>
-  </section>
+    <section>
+      <h2>5. Publicité — utilisateurs Free (Google AdMob + UMP)</h2>
+      <p>
+        Les utilisateurs Free peuvent voir des publicités fournies par
+        <strong>Google AdMob</strong>. Elles prennent la forme d'une
+        bannière discrète en bas des principaux écrans, d'une publicité
+        interstitielle affichée toutes les 5&nbsp;actions et de
+        publicités récompensées regardées volontairement pour gagner
+        des Coins.
+      </p>
+      <p>
+        Lorsque vous vous trouvez dans un pays soumis au RGPD (Espace
+        économique européen, Royaume-Uni) ou dans un État américain
+        régulé, l'application affiche au premier lancement le
+        formulaire de consentement <strong>Google User Messaging
+        Platform (UMP)</strong>. Vous pouvez à tout moment revenir sur
+        votre choix depuis Menu → «&nbsp;Préférences publicitaires&nbsp;»
+        dans l'application.
+      </p>
+      <p>
+        Google AdMob peut utiliser un identifiant publicitaire anonyme
+        (AAID) conformément à sa propre politique de confidentialité.
+        Si vous ne consentez pas aux annonces personnalisées, seules
+        des annonces non personnalisées vous seront présentées.
+      </p>
+      <p>
+        Les utilisateurs Premium ne voient aucune publicité classique,
+        ni bannière, ni interstitielle. Les publicités récompensées
+        peuvent rester disponibles si l'utilisateur les active
+        volontairement pour obtenir des Coins.
+      </p>
+    </section>
 
-  <section>
-    <h2>7. Déblocage temporaire de Premium via Coins</h2>
-    <p>
-      L'application peut permettre de débloquer temporairement Premium
-      avec des Coins : 2 000 Coins pour 1 mois ou 5 000 Coins pour
-      3 mois.
-    </p>
-    <p>
-      Ce déblocage est une utilisation ponctuelle de Coins et ne
-      constitue pas un abonnement récurrent.
-    </p>
-  </section>
+    <section>
+      <h2>6. Abonnements Premium — Google Play Billing</h2>
+      <p>
+        Trois formules Premium sont disponibles via Google Play&nbsp;:
+        mensuelle à <strong>5,99&nbsp;€</strong> par mois,
+        trimestrielle à <strong>14,99&nbsp;€</strong> pour 3&nbsp;mois
+        et annuelle à <strong>44,99&nbsp;€</strong> par an
+        (prix France&nbsp;/&nbsp;zone euro — les prix effectifs sont
+        adaptés à votre pays et sont ceux affichés par Google Play).
+      </p>
+      <p>
+        La facturation, le paiement et la gestion du renouvellement sont
+        effectués intégralement par <strong>Google Play Billing</strong>.
+        Infinity Life ne reçoit ni ne stocke aucune donnée bancaire.
+        L'application reçoit uniquement les informations nécessaires
+        à la vérification du statut Premium (identifiant d'abonnement
+        et date d'expiration).
+      </p>
+      <p>
+        Chaque mois effectivement couvert par un abonnement Premium
+        crédite 150&nbsp;Coins sur le compte. Pour les abonnements
+        trimestriels et annuels, les Coins sont distribués mois par
+        mois et non intégralement au moment du paiement initial.
+      </p>
+    </section>
 
-  <section>
-    <h2>8. Cosmétiques</h2>
-    <p>
-      Les éléments cosmétiques disponibles dans Infinity Life,
-      notamment les avatars, cadres, thèmes, badges et bulles de
-      l'Assistant, peuvent être achetés avec des Coins.
-    </p>
-    <p>
-      Les cosmétiques sont associés à votre compte et peuvent être
-      équipés à tout moment. Ils ne peuvent pas être revendus,
-      remboursés ou convertis en monnaie réelle.
-    </p>
-  </section>
+    <section>
+      <h2>7. Déblocage temporaire de Premium via Coins</h2>
+      <p>
+        L'application permet de débloquer temporairement Premium avec
+        des Coins&nbsp;: 2&nbsp;000&nbsp;Coins pour 1&nbsp;mois ou
+        5&nbsp;000&nbsp;Coins pour 3&nbsp;mois. Ce déblocage n'est
+        pas un abonnement récurrent et ne peut être remboursé en
+        monnaie réelle.
+      </p>
+    </section>
 
-  <section>
-    <h2>9. Infinity Assistant — traitement local</h2>
-    <p>
-      Infinity Assistant est une fonctionnalité Premium qui fonctionne
-      intégralement sur votre appareil à l'aide d'un moteur de règles
-      local.
-    </p>
-    <p>
-      Il analyse vos questions et intentions localement afin de pouvoir,
-      lorsque vous le demandez explicitement, ajouter, modifier ou
-      supprimer certains enregistrements dans l'application.
-    </p>
-    <p>
-      Les données conversationnelles ne sont pas envoyées à un service
-      d'intelligence artificielle externe tel qu'OpenAI, Anthropic ou
-      Google. Aucune requête vers un service d'IA externe n'est effectuée
-      pour cette fonctionnalité.
-    </p>
-  </section>
+    <section>
+      <h2>8. Cosmétiques</h2>
+      <p>
+        Les éléments cosmétiques d'Infinity Life (avatars, cadres,
+        thèmes, badges, bulles d'assistant) peuvent être achetés avec
+        des Coins. Ils sont associés à votre compte et peuvent être
+        équipés à tout moment. Ils ne peuvent pas être revendus,
+        remboursés ou convertis en monnaie réelle.
+      </p>
+    </section>
 
-  <section>
-    <h2>10. Prix des carburants — API publique</h2>
-    <p>
-      Infinity Life peut interroger les données ouvertes du Ministère
-      français de l'Économie afin de proposer automatiquement des prix
-      de carburants.
-    </p>
-    <p>
-      Ces requêtes ne nécessitent ni ne transmettent d'informations
-      personnelles de l'utilisateur.
-    </p>
-  </section>
+    <section>
+      <h2>9. Assistant Infinity — traitement local</h2>
+      <p>
+        L'Assistant Infinity de base (accessible également aux
+        utilisateurs Free) fonctionne intégralement sur votre appareil
+        à l'aide d'un moteur de règles local. Les données de
+        conversation ne quittent pas votre téléphone pour cette
+        fonctionnalité.
+      </p>
+    </section>
 
-  <section>
-    <h2>11. Données que nous ne collectons pas</h2>
-    <p>
-      Infinity Life n'accède pas à vos contacts, à vos SMS, à votre
-      caméra, à votre localisation ou à d'autres informations qui ne
-      sont pas nécessaires au fonctionnement de l'application.
-    </p>
-    <p>
-      L'adresse e-mail associée à un compte sert à l'authentification,
-      aux e-mails transactionnels essentiels tels que la confirmation
-      ou la réinitialisation du mot de passe, ainsi qu'à identifier
-      vos données côté cloud.
-    </p>
-  </section>
+    <section>
+      <h2>10. Assistant IA conversationnel Premium — OpenAI</h2>
+      <p>
+        Les utilisateurs Premium disposent d'un <strong>Assistant IA
+        conversationnel</strong> alimenté par le modèle
+        <code>gpt-5.6-terra</code> d'<strong>OpenAI, LLC</strong>. Lorsque
+        vous envoyez un message à l'Assistant IA, le texte de votre
+        message est transmis via notre serveur backend à l'API
+        officielle d'OpenAI pour générer une réponse.
+      </p>
+      <p>
+        <strong>Aucune donnée personnelle identifiante</strong>
+        (identifiant de compte, adresse email, données de profil) n'est
+        transmise à OpenAI. Seul le texte de votre requête est envoyé.
+        La recherche web native fournie par OpenAI (fonctionnalité
+        Achat intelligent) peut être utilisée pour retrouver des prix
+        en temps réel avant achat.
+      </p>
+      <p>
+        Un quota côté serveur limite la consommation par cycle
+        d'abonnement afin de contrôler les coûts. Ce quota ne vous est
+        exposé que sous forme de pourcentage restant.
+      </p>
+      <p>
+        Politique de confidentialité d'OpenAI&nbsp;: <a href="https://openai.com/policies/privacy-policy/" rel="noopener">openai.com/policies/privacy-policy</a>.
+      </p>
+    </section>
 
-  <section>
-    <h2>12. Vos droits</h2>
-    <p>
-      Vous pouvez à tout moment vous déconnecter de votre compte.
-      Vos données locales restent alors disponibles sur votre appareil.
-    </p>
-    <p>
-      Vous pouvez également supprimer définitivement votre compte
-      depuis l'application via Menu → Mon compte → Supprimer mon compte.
-      La suppression du compte entraîne la suppression des données cloud
-      associées, notamment votre profil, vos Coins, vos cosmétiques et
-      vos enregistrements synchronisés.
-    </p>
-    <p>
-      Vous pouvez également supprimer manuellement les enregistrements
-      disponibles dans l'application ou désinstaller Infinity Life afin
-      d'effacer les données locales.
-    </p>
-    <p>
-      En cas de suppression définitive du compte, aucune donnée
-      personnelle associée à ce compte n'est conservée côté serveur,
-      sous réserve des éventuelles obligations légales applicables.
-    </p>
-  </section>
+    <section>
+      <h2>11. Emails transactionnels — Resend</h2>
+      <p>
+        Les emails transactionnels essentiels (confirmation d'inscription,
+        réinitialisation de mot de passe, notification de suppression de
+        compte) sont envoyés par notre sous-traitant
+        <strong>Resend, Inc.</strong>
+      </p>
+      <p>
+        Aucune newsletter ni communication commerciale ne vous est
+        envoyée sans opt-in explicite. Les données transmises à Resend
+        se limitent à votre adresse email et au contenu de l'email
+        transactionnel concerné.
+      </p>
+    </section>
 
-  <section>
-    <h2>13. Sécurité</h2>
-    <p>
-      L'authentification utilise Supabase Auth. Les échanges réseau
-      sont protégés par TLS et les mots de passe sont protégés côté
-      serveur à l'aide de mécanismes de hachage sécurisés.
-    </p>
-    <p>
-      L'application utilise uniquement la clé publique destinée à être
-      utilisée côté client et ne contient pas de clé de service secrète.
-    </p>
-    <p>
-      Les règles Row Level Security de Supabase contribuent à assurer
-      l'isolation des données entre les utilisateurs. Les Edge Functions
-      vérifient l'identité de l'appelant avant les opérations sensibles.
-    </p>
-  </section>
+    <section>
+      <h2>12. Prix des carburants — API publique</h2>
+      <p>
+        Infinity Life peut interroger les données ouvertes du Ministère
+        français de l'Économie (<code>prix-carburants.gouv.fr</code>,
+        Licence Ouverte 2.0) afin de proposer des prix carburants moyens
+        au niveau national. Ces requêtes ne transmettent aucune donnée
+        personnelle et ne nécessitent aucune géolocalisation de
+        l'utilisateur.
+      </p>
+    </section>
 
-  <section>
-    <h2>14. Contact</h2>
-    <p>
-      Pour toute question concernant cette politique de confidentialité
-      ou le traitement de vos données, vous pouvez nous contacter via
-      la fiche Google Play d'Infinity Life.
-    </p>
-  </section>
+    <section>
+      <h2>13. Données que nous ne collectons pas</h2>
+      <p>
+        Infinity Life n'accède pas à vos contacts, à vos SMS, à votre
+        caméra ni à votre localisation GPS. L'application ne demande
+        aucune permission de géolocalisation.
+      </p>
+      <p>
+        L'adresse email associée à un compte sert exclusivement à
+        l'authentification, aux emails transactionnels essentiels et à
+        l'identification de vos données côté cloud. Elle n'est jamais
+        vendue, échangée ou communiquée à des tiers autres que les
+        sous-traitants strictement nécessaires listés dans cette
+        politique.
+      </p>
+    </section>
 
-  <section>
-    <h2>15. Modifications</h2>
-    <p>
-      Cette politique de confidentialité peut être mise à jour afin
-      de refléter l'évolution d'Infinity Life, de ses fonctionnalités
-      ou de ses obligations légales.
-    </p>
-    <p>
-      Toute modification importante sera signalée dans l'application
-      ou par tout autre moyen approprié.
-    </p>
-  </section>
+    <section>
+      <h2>14. Sous-traitants (RGPD Art. 28)</h2>
+      <ul>
+        <li><strong>Supabase, Inc.</strong> — hébergement base de données PostgreSQL, authentification, Edge Functions.</li>
+        <li><strong>OpenAI, LLC</strong> — moteur d'IA de l'Assistant IA conversationnel Premium (modèle <code>gpt-5.6-terra</code>).</li>
+        <li><strong>Resend, Inc.</strong> — envoi des emails transactionnels.</li>
+        <li><strong>Google LLC / Google Ireland Ltd</strong> — distribution via Google Play, facturation Google Play Billing, publicité Google AdMob, consentement Google UMP.</li>
+      </ul>
+      <p>
+        Un contrat de sous-traitance conforme au RGPD (Art.&nbsp;28)
+        encadre chacune de ces relations. Certains traitements peuvent
+        impliquer un transfert de données hors Union européenne
+        (États-Unis notamment) encadré par les Clauses Contractuelles
+        Types de la Commission européenne.
+      </p>
+    </section>
+
+    <section>
+      <h2>15. Vos droits (RGPD, CCPA, APPI)</h2>
+      <p>
+        Vous pouvez à tout moment&nbsp;:
+      </p>
+      <ul>
+        <li><strong>Accéder</strong> à vos données depuis l'application (Menu → Mon compte → Exporter mes données, lorsque disponible) ou par email de demande.</li>
+        <li><strong>Rectifier</strong> vos données directement depuis les écrans de saisie.</li>
+        <li><strong>Supprimer</strong> définitivement votre compte via Menu → Mon compte → Supprimer mon compte. La procédure détaillée est également disponible sur <a href="https://decoyanthony.github.io/infinity-life-support/delete-account.html" rel="noopener">notre page dédiée</a>.</li>
+        <li><strong>Vous opposer</strong> au traitement publicitaire personnalisé via le formulaire UMP (Menu → Préférences publicitaires) ou en devenant Premium.</li>
+        <li><strong>Retirer</strong> votre consentement à tout moment.</li>
+      </ul>
+      <p>
+        <strong>Utilisateurs résidant en Californie (CCPA)</strong>&nbsp;:
+        Infinity Life ne vend ni ne loue vos données personnelles. Vous
+        disposez du droit de savoir, du droit de suppression et du
+        droit de non-discrimination.
+      </p>
+      <p>
+        <strong>Utilisateurs résidant au Japon (APPI)</strong>&nbsp;: nos
+        obligations en tant qu'opérateur d'informations personnelles
+        sont respectées&nbsp;; vous pouvez demander l'accès, la
+        rectification ou la suppression de vos données par email.
+      </p>
+      <p>
+        Pour toute demande d'exercice de droits&nbsp;:
+        <a href="mailto:infinity.bear.prod@gmail.com?subject=Exercice%20de%20droits%20RGPD%20Infinity%20Life">infinity.bear.prod@gmail.com</a>.
+        Vous pouvez également introduire une réclamation auprès de la
+        CNIL (France) : <a href="https://www.cnil.fr/fr/plaintes" rel="noopener">cnil.fr</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2>16. Durée de conservation</h2>
+      <ul>
+        <li>Compte actif&nbsp;: tant que vous utilisez l'application.</li>
+        <li>Compte supprimé&nbsp;: effacement immédiat côté serveur, sous réserve des obligations légales applicables.</li>
+        <li>Logs techniques de sécurité (anti-abus)&nbsp;: 30&nbsp;jours maximum.</li>
+        <li>Emails transactionnels&nbsp;: selon la politique de rétention de Resend.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>17. Sécurité</h2>
+      <p>
+        L'authentification utilise Supabase Auth (mots de passe hachés
+        côté serveur, échanges chiffrés en TLS). L'application n'utilise
+        que la clé publique <em>publishable</em> destinée au client et
+        ne contient aucune clé secrète de service. Les règles Row Level
+        Security et les vérifications côté Edge Functions assurent
+        l'isolation des données entre utilisateurs.
+      </p>
+    </section>
+
+    <section>
+      <h2>18. Enfants</h2>
+      <p>
+        Infinity Life n'est pas destinée aux enfants de moins de
+        16&nbsp;ans. Nous ne collectons pas sciemment de données
+        personnelles concernant des enfants.
+      </p>
+    </section>
+
+    <section>
+      <h2>19. Contact</h2>
+      <p>
+        Pour toute question relative à cette politique&nbsp;:
+        <a href="mailto:infinity.bear.prod@gmail.com?subject=Confidentialité%20Infinity%20Life">infinity.bear.prod@gmail.com</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2>20. Modifications</h2>
+      <p>
+        Cette politique peut être mise à jour pour refléter l'évolution
+        de l'application, de ses fonctionnalités ou de ses obligations
+        légales. Toute modification importante sera signalée dans
+        l'application ou par tout autre moyen approprié.
+      </p>
+    </section>
+
+    <footer>
+      Infinity Life · <code>com.infinitycar.app</code> · <a href="./index.html">Documents légaux</a> · <a href="./terms-of-service.html">CGU</a> · <a href="./legal-notice.html">Mentions légales</a>
+    </footer>
+  </div>
+</body>
+</html>
